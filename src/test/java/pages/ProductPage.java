@@ -28,15 +28,15 @@ public class ProductPage extends BasePage {
 
         StringBuilder resultBuilder = new StringBuilder();
         for (WebElement element : productDescription) {
-            resultBuilder.append(element.getText()).append("\n,");
+            resultBuilder.append(element.getText()).append("\n");
         }
-        // Remove the trailing ", " if there are elements
+
         if (resultBuilder.length() > 0) {
             resultBuilder.setLength(resultBuilder.length() - 2);
         }
         // Convert StringBuilder to String
         String result = resultBuilder.toString();
-        //String productDescriptionText = productDescription.getText();
+
         return productTitleText + "\n" + result ;
     }
 

@@ -16,7 +16,7 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
-    /*
+
         byte[] picture;
         if (scenario.isFailed()) {
             // take screenshot and save it in /failed
@@ -24,7 +24,7 @@ public class Hooks {
             scenario.attach(picture, "image/png", scenario.getName());
         }
         Driver.closeDriver();
-     */
+
     }
 
 }
